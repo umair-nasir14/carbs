@@ -14,10 +14,10 @@ from sklearn.preprocessing import QuantileTransformer
 from torch import Tensor
 from torch.distributions import Normal
 
-from carbs.utils import ObservationInBasic
-from carbs.utils import OutstandingSuggestionEstimatorEnum
-from carbs.utils import SuggestionInBasic
-from carbs.utils import SurrogateModelParams
+from CRBS.carbs.utils import ObservationInBasic
+from CRBS.carbs.utils import OutstandingSuggestionEstimatorEnum
+from CRBS.carbs.utils import SuggestionInBasic
+from CRBS.carbs.utils import SurrogateModelParams
 
 
 @attr.s(auto_attribs=True, collect_by_mro=True)

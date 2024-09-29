@@ -30,33 +30,33 @@ from torch.distributions import Normal
 from wandb.sdk.lib import RunDisabled
 from wandb.sdk.wandb_run import Run
 
-from carbs.model import SurrogateModel
-from carbs.utils import CARBSParams, load_latest_checkpoint_from_wandb_run
-from carbs.utils import CARBS_CHECKPOINT_PREFIX
-from carbs.utils import CARBS_CHECKPOINT_SUFFIX
-from carbs.utils import ObservationGroup
-from carbs.utils import ObservationInBasic
-from carbs.utils import ObservationInParam
-from carbs.utils import ObserveOutput
-from carbs.utils import Param
-from carbs.utils import ParamDictType
-from carbs.utils import RealNumberSpace
-from carbs.utils import SUGGESTION_ID_DICT_KEY
-from carbs.utils import SuggestOutput
-from carbs.utils import SuggestionInBasic
-from carbs.utils import SurrogateModelParams
-from carbs.utils import add_dict_key_prefix
-from carbs.utils import aggregate_logical_and_across_dim
-from carbs.utils import assert_empty
-from carbs.utils import expected_improvement
-from carbs.utils import get_pareto_curve_plot
-from carbs.utils import get_pareto_groups
-from carbs.utils import get_pareto_groups_conservative
-from carbs.utils import group_observations
-from carbs.utils import observation_group_cost
-from carbs.utils import observation_group_output
-from carbs.utils import ordered_dict_index
-from carbs.utils import pareto_area_from_groups
+from CRBS.carbs.model import SurrogateModel
+from CRBS.carbs.utils import CARBSParams, load_latest_checkpoint_from_wandb_run
+from CRBS.carbs.utils import CARBS_CHECKPOINT_PREFIX
+from CRBS.carbs.utils import CARBS_CHECKPOINT_SUFFIX
+from CRBS.carbs.utils import ObservationGroup
+from CRBS.carbs.utils import ObservationInBasic
+from CRBS.carbs.utils import ObservationInParam
+from CRBS.carbs.utils import ObserveOutput
+from CRBS.carbs.utils import Param
+from CRBS.carbs.utils import ParamDictType
+from CRBS.carbs.utils import RealNumberSpace
+from CRBS.carbs.utils import SUGGESTION_ID_DICT_KEY
+from CRBS.carbs.utils import SuggestOutput
+from CRBS.carbs.utils import SuggestionInBasic
+from CRBS.carbs.utils import SurrogateModelParams
+from CRBS.carbs.utils import add_dict_key_prefix
+from CRBS.carbs.utils import aggregate_logical_and_across_dim
+from CRBS.carbs.utils import assert_empty
+from CRBS.carbs.utils import expected_improvement
+from CRBS.carbs.utils import get_pareto_curve_plot
+from CRBS.carbs.utils import get_pareto_groups
+from CRBS.carbs.utils import get_pareto_groups_conservative
+from CRBS.carbs.utils import group_observations
+from CRBS.carbs.utils import observation_group_cost
+from CRBS.carbs.utils import observation_group_output
+from CRBS.carbs.utils import ordered_dict_index
+from CRBS.carbs.utils import pareto_area_from_groups
 
 
 class CARBS:

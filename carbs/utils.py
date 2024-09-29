@@ -25,7 +25,7 @@ from scipy.special import wofz
 from torch import Tensor
 from torch.distributions import Normal
 
-from carbs.serialization import Serializable
+from CRBS.carbs.serialization import Serializable
 
 ParamType = Union[int, float, str, bool, Enum]
 ParamDictType = Dict[str, ParamType]
